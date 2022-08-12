@@ -7,7 +7,7 @@ public class PlayGame : MonoBehaviour
 {
     public void startmenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
     }
 }
    

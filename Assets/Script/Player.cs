@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-       
+
         if (Input.GetKeyUp(KeyCode.Space))
 
         {
@@ -60,13 +60,21 @@ public class Player : MonoBehaviour
                     RB.velocity = new Vector2(RB.velocity.x, 8f);
                 }
             }
-           
+
 
 
         }
-        
-        
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                RB.velocity = Vector2.up * JumpForce;
+            }
+
+
         }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log($"collision");

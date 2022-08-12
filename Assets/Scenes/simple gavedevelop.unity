@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05924ef7205fe7e459bac84e0dc1056d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpForce: 5
+  JumpForce: 10
   isGrounded: 1
   scoreText: {fileID: 1065941629}
 --- !u!114 &272270670
@@ -683,7 +683,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 679, y: -109}
+  m_AnchoredPosition: {x: 816, y: 110}
   m_SizeDelta: {x: 130, y: 137.1452}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &521243255
@@ -1273,7 +1273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -471, y: 141}
+  m_AnchoredPosition: {x: -574, y: 450}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &816778377
@@ -2259,6 +2259,7 @@ GameObject:
   - component: {fileID: 1952979348}
   - component: {fileID: 1952979347}
   - component: {fileID: 1952979346}
+  - component: {fileID: 1952979350}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -2283,7 +2284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 653.85815, y: 219.85742}
+  m_AnchoredPosition: {x: 795, y: 383}
   m_SizeDelta: {x: 215.7156, y: 148.5687}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1952979346
@@ -2392,6 +2393,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952979344}
   m_CullTransparentMesh: 1
+--- !u!114 &1952979350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952979344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309eac47998aaa24ca16b9c4387cb239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1952979347}
 --- !u!212 &2571808059250737611
 SpriteRenderer:
   m_ObjectHideFlags: 0
